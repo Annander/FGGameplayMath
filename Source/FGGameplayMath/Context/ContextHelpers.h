@@ -113,7 +113,7 @@ public:
 
 	// Used for checking a single flag
 	UFUNCTION(BlueprintCallable, Category = "Context")
-	static bool FlagPredicate(const int32 Test, const int32 Value)
+	static bool FlagPredicate(const int32 Test, const ERelativeContext Value)
 	{
 		return TEST_BIT(Test, Value);
 	}	
